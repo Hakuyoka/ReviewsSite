@@ -40,7 +40,68 @@
   padding: 0.2em 0;
 }
 
+/**
+ * Header
+ */
 
+.navbar-default{
+  background-color: #4b5464;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  /*padding-top: 30px;*/
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  /*padding-top: 30px;*/
+}
+
+.navbar-default .navbar-text {
+  color: white;
+  /*padding-top: 15px;*/
+}
+
+.container {
+  width: auto;
+}
+
+#search_icon{
+  width: 35px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.navbar-nav > li {
+  padding-top: 20px;
+}
+
+#select_category{
+  line-height: 55px;
+  margin-top: 5px;
+  width: 200px;
+  height: 30px;
+  margin-left: 100px;
+}
+
+#select_category > option{
+  color: deepskyblue;
+}
+
+#search_input{
+  margin-top: 5px;
+  width: 200px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+#hamburger_icon{
+  width: 34px;
+  padding-left: 10px;
+  padding-top: 8px;
+}
 /* Component styles are injected through gulp */
 /* inject:css */
 @import 'admin/admin.css';

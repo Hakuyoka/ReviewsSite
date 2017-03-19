@@ -4,10 +4,36 @@
 import angular from 'angular';
 
 export class NavbarComponent {
-  menu = [{
-    title: 'Home',
-    state: 'main'
-  }];
+  menu = [
+    {
+      title: 'タイムライン',
+      state: 'main'
+    },
+    {
+      title: 'お知らせ',
+      state: 'main'
+    },
+    {
+      title: 'フォロー',
+      state: 'main'
+    },
+    {
+      title: '詳細検索',
+      state: 'main'
+    },
+    {
+      title: 'メッセージ',
+      state: 'main'
+    },
+    {
+      title: 'レビュー投稿',
+      state: 'main'
+    },
+    {
+      title: 'その他',
+      state: 'main'
+    }
+  ];
   isLoggedIn: Function;
   isAdmin: Function;
   getCurrentUser: Function;
