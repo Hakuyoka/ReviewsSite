@@ -46,6 +46,7 @@
 
 .navbar-default{
   background-color: #4b5464;
+  margin-bottom: 0px;
 }
 
 .navbar-default .navbar-brand {
@@ -102,6 +103,16 @@
   padding-left: 10px;
   padding-top: 8px;
 }
+
+/**
+ side bar
+ */
+#sidebar_main{
+  background-color: #c7c7c7;
+  padding: 10px;
+}
+
+
 /* Component styles are injected through gulp */
 /* inject:css */
 @import 'admin/admin.css';

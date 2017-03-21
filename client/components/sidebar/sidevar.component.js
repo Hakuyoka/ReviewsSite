@@ -17,7 +17,10 @@ export class SidebarComponent {
     }
   ];
   items = ['Item 1', 'Item 2', 'Item 3'];
-
+  stars = ['★★★★★', '★★★★☆以上', '★★★☆☆以上', '★★☆☆以上', '★☆☆☆☆以上'];
+  site = ['北海道・東北', '関東', '中部・北陸', '関西', '中部・四国', '九州・沖縄'];
+  category = ["家電","パソコン","カメラ"];
+  sex = ["男","女" ];
 
   isLoggedIn: Function;
   isAdmin: Function;
