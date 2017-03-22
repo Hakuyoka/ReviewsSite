@@ -16,18 +16,6 @@
     </div>
   </script>
 
-
-  <!--<p>-->
-    <!--<button type="button" class="btn btn-default btn-sm" ng-click="status.open = !status.open">Toggle last panel</button>-->
-    <!--<button type="button" class="btn btn-default btn-sm" ng-click="status.isFirstDisabled = ! status.isFirstDisabled">Enable / Disable first panel</button>-->
-  <!--</p>-->
-
-  <!--<div class="checkbox">-->
-    <!--<label>-->
-      <!--<input type="checkbox" ng-model="oneAtATime">-->
-      <!--Open only one at a time-->
-    <!--</label>-->
-  <!--</div>-->
   <uib-accordion close-others="oneAtATime">
 
     <div uib-accordion-group class="panel-default" heading="商品分類" is-open="$ctrl.status.isItemCategoryOpen" template-url="group-template.html">
