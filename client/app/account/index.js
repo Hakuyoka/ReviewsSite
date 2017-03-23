@@ -8,7 +8,7 @@ import routing from './account.routes';
 import login from './login';
 import settings from './settings';
 import signup from './signup';
-
+console.log("account index")
 export default angular.module('reviewrsApp.account', [uiRouter, login, settings, signup])
   .config(routing)
   .run(function($rootScope) {

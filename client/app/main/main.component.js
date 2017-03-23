@@ -7,9 +7,10 @@ export class MainController {
   socket;
   awesomeThings = [];
   newThing = '';
-
+  test = "test"
   /*@ngInject*/
   constructor($http, $scope, socket) {
+
     this.$http = $http;
     this.socket = socket;
 

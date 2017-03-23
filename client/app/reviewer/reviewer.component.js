@@ -2,7 +2,7 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import routing from './reviewer.routes';
 
-export class MainController {
+export class ReviewerController {
   $http;
   socket;
   awesomeThings = [];
@@ -10,6 +10,7 @@ export class MainController {
 
   /*@ngInject*/
   constructor($http, $scope, socket) {
+    console.dir("reviewrs")
     this.$http = $http;
     this.socket = socket;
 
@@ -40,10 +41,10 @@ export class MainController {
   }
 }
 
-export default angular.module('reviewrsApp.main', [uiRouter])
+export default angular.module('reviewrsApp.reviewer', [uiRouter])
   .config(routing)
-  .component('main', {
+  .component('reviewer', {
     template: require('./reviewer.html'),
-    controller: MainController
+    controller: ReviewerController
   })
   .name;

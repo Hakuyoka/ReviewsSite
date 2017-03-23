@@ -1,0 +1,92 @@
+.content_footer{
+    background-color: #c7c7c7;
+    height: 50px;
+}
+
+.content_main{
+    height: 200px;
+}
+
+.content_main > div{
+    width: 180px;
+    display: inline-block;
+}
+
+.user_image{
+    width: 150px;
+}
+
+/**
+    http://qiita.com/junara/items/b9acf7b6a1e5fd01e6f8
+ */
+.star-rating-box {
+    position: relative; /* position: abosoluteの基準 */
+    display: inline-block; /* 最大星数に応じてdivのwidthを伸縮させるため */
+    font-size: 25px;
+    color: black;
+}
+.filled-star {
+    position: absolute; /* .filled-starと.empty-starを重ねる */
+    top: 0; /* 左上の基準位置に移動させる */
+    overflow: hidden; /* widthが足りない時、はみ出た分は表示しない */
+    white-space: nowrap; /* widthが足りない時に、折り返さないようにする。 */
+    width: 50%; /* 星1.5個 表示。= 100 * 1.5 / 3 */
+    color: yellow;
+    font-size: 25px;
+}
+
+/**
+http://www.pressmantech.com/tech/design/2738#arrow-sample1-4
+ */
+
+.arrow{
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+}
+.arrow{
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+}
+.arrow::before,
+.arrow::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+.sample3-2::before{
+    left: 4px;
+    box-sizing: border-box;
+    width: 20px;
+    height: 60px;
+    border: 36px solid transparent;
+    border-left: 49px solid #7a0;
+    margin-left: 148px;
+    bottom: 7px;
+}
+.sample3-2::after {
+    left: 12px;
+    /* width: 1238px; */
+    height: 30px;
+    border-left: 141px solid #7a0;
+    top: -9px;
+}
+.arrow_area{
+    width: 250px;
+    padding-bottom: 0px;
+    margin-bottom: 200px;
+    vertical-align: middle;
+}

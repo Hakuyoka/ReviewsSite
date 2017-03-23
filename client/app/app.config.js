@@ -3,7 +3,6 @@
 export function routeConfig($urlRouterProvider, $locationProvider, $stateProvider) {
   'ngInject';
 
-  console.log($stateProvider)
   $urlRouterProvider
     .otherwise('/');
 
@@ -27,6 +26,4 @@ export function routeConfig($urlRouterProvider, $locationProvider, $stateProvide
       }
     })
 
-
-  $locationProvider.html5Mode(true);
 }
