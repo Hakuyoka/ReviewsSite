@@ -1,4 +1,4 @@
-<div class="navbar navbar-default navbar-static-top">
+<div  class="navbar navbar-default navbar-static-top" >
   <div class="container">
     <div class="navbar-header">
       <!--<button class="navbar-toggle" type="button" ng-click="$ctrl.isCollapsed = !$ctrl.isCollapsed">-->
@@ -9,7 +9,7 @@
       <!--</button>-->
       <!--<a href="/" class="navbar-brand">reviewrs</a>-->
     </div>
-    <div uib-collapse="$ctrl.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+    <div uib-collapse="$ctrl.isCollapsed" class="navbar-collapse collapse" id="navbar-main" style="min-width: 1200px;width: 100%">
       <ul class="nav navbar-nav">
         <li ng-repeat="item in $ctrl.menu" ui-sref-active="active">
             <a ui-sref="{{item.state}}">{{item.title}}</a>
