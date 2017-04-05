@@ -5,7 +5,7 @@
         <div style="    margin-left: 350px;padding-top: 10px;">
 
 
-            <div class="content_main">
+            <div class="content_main" ng-class="is_expand">
                 <div class="review_area" >
                     <img class="user_image img-rounded" src="assets/images/7368459.jpeg">
                     <div class="star-rating-box">
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review_area" style="    margin-left: 44px;">
+                <div class="review_area" style="">
                     <img class="user_image img-rounded" src="assets/images/7368459.jpeg">
                     <div class="star-rating-box">
                         <div class="empty-star">
@@ -37,6 +37,25 @@
                         <div class="filled-star">
                             ★★★★★
                         </div>
+                    </div>
+                </div>
+
+                <div class="comment_area" style="border: 1px;  ">
+                    <div>
+                        それらの夏の日々、一面に薄すすきの生い茂った草原の中で、お前が立ったまま熱心に絵を描いていると、私はいつもその傍らの一本の白樺の木蔭に身を横たえていたものだった。そうして夕方になって、お前が仕事をすませて私のそばに来ると、それからしばらく私達は肩に手をかけ合ったまま、遥か彼方の、縁だけ茜色あかねいろを帯びた入道雲のむくむくした塊りに覆われている地平線の方を眺めやっていたものだった。ようやく暮れようとしかけているその地平線から、反対に何物かが生れて来つつあるかのように……
+
+                        　そんな日の或る午後、（それはもう秋近い日だった）私達はお前の描きかけの絵を画架に立てかけたまま、その白樺の木蔭に寝そべって果物を齧かじっていた。砂のような雲が空をさらさらと流れていた。そのとき不意に、何処からともなく風が立った。私達の頭の上では、木の葉の間からちらっと覗いている藍色あいいろが伸びたり縮んだりした。それと殆んど同時に、草むらの中に何かがばったりと倒れる物音を私達は耳にした。それは私達がそこに置きっぱなしにしてあった絵が、画架と共に、倒れた音らしかった。すぐ立ち上って行こうとするお前を、私は、いまの一瞬の何物をも失うまいとするかのように無理に引き留めて、
+                        <a type="text" class="" data-toggle="collapse" ng-click="is_expand = content.changeCollapsed(); ">続きを読む ›</a>
+                    </div>
+                    <div id="demo{{content.id}}"  ng-class="" uib-collapse="!content.isCollapsed">
+                        私のそばから離さないでいた。お前は私のするがままにさせていた。
+
+                        風立ちぬ、いざ生きめやも。
+
+                        　ふと口を衝ついて出て来たそんな詩句を、私は私に靠もたれているお前の肩に手をかけながら、口の裡うちで繰り返していた。それからやっとお前は私を振りほどいて立ち上って行った。まだよく乾いてはいなかったカンヴァスは、その間に、一めんに草の葉をこびつかせてしまっていた。それを再び画架に立て直し、パレット・ナイフでそんな草の葉を除とりにくそうにしながら、
+                        「まあ！　こんなところを、もしお父様にでも見つかったら……」
+                        　お前は私の方をふり向いて、なんだか曖昧あいまいな微笑をした。
+
                     </div>
                 </div>
             </div>

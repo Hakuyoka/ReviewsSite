@@ -1,36 +1,18 @@
 .content_footer{
     background-color: #c7c7c7;
     height: 50px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .content_main{
-    height: 200px;
-}
-
-.expand{
-    height: 400px;
-}
-.not_expand{
-    height: 200px;
-}
-
-.content_main > div{
-    display: inline-block;
+    height: 170px;
 }
 
 .user_image{
-    width: 150px;
+    width: 100%;
 }
 
-.comment_area{
-    min-width: 300px;
-    width: 50%;
-    vertical-align: top;
-}
-
-.review_area{
-    width: 180px;
-}
 
 /**
     http://qiita.com/junara/items/b9acf7b6a1e5fd01e6f8
@@ -38,7 +20,7 @@
 .star-rating-box {
     position: relative; /* position: abosoluteの基準 */
     display: inline-block; /* 最大星数に応じてdivのwidthを伸縮させるため */
-    font-size: 25px;
+    font-size: 20px;
     color: black;
 }
 .filled-star {
@@ -48,7 +30,7 @@
     white-space: nowrap; /* widthが足りない時に、折り返さないようにする。 */
     width: 50%; /* 星1.5個 表示。= 100 * 1.5 / 3 */
     color: yellow;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /**
@@ -90,20 +72,28 @@ http://www.pressmantech.com/tech/design/2738#arrow-sample1-4
     height: 60px;
     border: 36px solid transparent;
     border-left: 49px solid #7a0;
-    margin-left: 148px;
+    margin-left: 95px;
     bottom: 7px;
 }
 .sample3-2::after {
     left: 12px;
     /* width: 1238px; */
     height: 30px;
-    border-left: 141px solid #7a0;
+    border-left: 115px solid #7a0;
     top: -9px;
 }
 .arrow_area{
-    width: 230px;
-    padding-bottom: 200px;
-    /*margin-bottom: 200px;*/
-    vertical-align: middle;
-}
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 150px;
+    margin-top: 40px;
 
+}
+.comment_area{
+
+    min-width: 300px;
+    max-height: 200px;
+    min-height: 100px;
+    padding-bottom: 0px;
+    margin-bottom: 200px;
+}

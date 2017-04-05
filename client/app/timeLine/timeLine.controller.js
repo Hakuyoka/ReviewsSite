@@ -6,9 +6,15 @@ class Content {
   fromUser = "";
   toUser = "";
   targetItem = "";
+  id;
+  isCollapsed = false;
+  changeCollapsed = ()=> {
+    this.isCollapsed = !this.isCollapsed
+    return this.isCollapsed ? "expand" : "not_expand"
+  }
 
-  constructor(){
-
+  constructor(model){
+    this.id = model.id
   }
 }
 export default class TimeLineController {
@@ -17,7 +23,7 @@ export default class TimeLineController {
   awesomeThings = [];
   newThing = '';
 
-  contents = [{test:"test"},{}];
+  contents = [new Content({test:"test",id:0,isCollapsed:false}),{id:1,isCollapsed:false}];
   /*@ngInject*/
   constructor($http, $scope, socket) {
     console.log("timeLine Cotr",$http, $scope, socket)
