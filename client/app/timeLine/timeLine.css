@@ -25,7 +25,9 @@
 .comment_area{
     min-width: 300px;
     width: 50%;
+    height: 180px;
     vertical-align: top;
+    overflow: hidden;
 }
 
 .review_area{
@@ -105,5 +107,12 @@ http://www.pressmantech.com/tech/design/2738#arrow-sample1-4
     padding-bottom: 200px;
     /*margin-bottom: 200px;*/
     vertical-align: middle;
+}
+
+.text_area{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+    height: 100%;
 }
 
